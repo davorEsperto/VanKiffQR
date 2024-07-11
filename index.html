@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redireccionamiento Aleatorio</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Define las dos URLs
+            var urlA = "https://www.ejemplo.com/a";
+            var urlB = "https://www.ejemplo.com/b";
+            
+            // Redirecciona aleatoriamente a una de las URLs
+            var randomUrl = Math.random() < 0.5 ? urlA : urlB;
+            window.location.href = randomUrl;
+        };
+    </script>
+</head>
+<body>
+    <p>Redirigiendo...</p>
+</body>
+</html>
