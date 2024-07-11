@@ -4,12 +4,20 @@
     <title>Redireccionamiento Aleatorio</title>
     <script type="text/javascript">
         window.onload = function() {
-            // Define las dos URLs
-            var urlA = "https://drive.google.com/file/d/1L7m9xsei62bybsbjixigFO_X-OYUWj9U/view?usp=drive_link";
-            var urlB = "https://drive.google.com/file/d/19jwPeGQ2txDHUJo7k-PGduw5ExX9JcGr/view?usp=drive_link";
+            // Define las URLs en un array
+            var urls = [
+                "https://youtu.be/Fc0hQoIaCzw",
+                "https://youtube.com/shorts/hVnQccAUKbk?feature=share",
+                "https://youtube.com/shorts/iZExu2zYNmU?feature=share",
+                "https://youtube.com/shorts/FRnCkjmQh9Y?feature=share",
+                "https://youtube.com/shorts/w9lmDZdo0_U?feature=share",
+                "https://youtu.be/a0vEs_nDteM"
+            ];
+
+            // Selecciona aleatoriamente una URL del array
+            var randomUrl = urls[Math.floor(Math.random() * urls.length)];
             
-            // Redirecciona aleatoriamente a una de las URLs
-            var randomUrl = Math.random() < 0.5 ? urlA : urlB;
+            // Redirecciona a la URL seleccionada
             window.location.href = randomUrl;
         };
     </script>
